@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:simpleLoading/app/modules/home/presenter/controllers/home_controller.dart';
+import '../controllers/home_controller.dart';
 
 class HomePage extends StatelessWidget {
   final HomeController controller;
@@ -70,7 +70,10 @@ class HomePage extends StatelessWidget {
                   ],
                 );
               }
-              return Text('');
+              return Container(
+                height: 0,
+                width: 0,
+              );
             }),
           ],
         ),
